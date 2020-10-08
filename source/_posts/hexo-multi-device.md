@@ -14,3 +14,11 @@ https://www.zhihu.com/question/21193762/answer/489124966
 
 https://duran.im/2018/05/24/mastering-hexo/
 
+## windows下重新安装hexo环境
+- git clone
+- 安装Node.js
+  - https://nodejs.org/en/
+- 安装hexo
+  - `npm install -g hexo-cli`
+- 初始化工作区
+  - `npm install --force`

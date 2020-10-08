@@ -31,7 +31,7 @@ site:
     width: 40
     height: 40
     url: ../images/logo.png
-  title: Hexo # 页面title
+  title: Heleidsn # 页面title
   favicon: /favicon.png
   board: <p>欢迎交流与分享经验!</p> # 站点公告
   copyright: true # 底部版权信息
@@ -86,11 +86,11 @@ donate:
   enable: true
   # 微信打赏
   wechatpay:
-    qrcode: images/donate/wechatpayimg.png
+    qrcode: images/donate/wechatpayimg_lei.jpg
     title: 微信支付
   # 支付宝打赏
   alipay: 
-    qrcode: images/donate/alipayimg.png 
+    qrcode: images/donate/alipayimg_lei.jpg
     title: 支付宝
 
 # Share
@@ -102,7 +102,7 @@ share:
 
 # Github
 github: 
-  username: cofess  # github username
+  username: heleidsn  # github username
 
 # Comment
 # Gitment
@@ -156,9 +156,9 @@ douban:
 # PV
 pv:
   busuanzi:
-    enable: false  # 不蒜子统计
+    enable: true  # 不蒜子统计
   leancloud:
-    enable: false  # leancloud统计
+    enable: true  # leancloud统计
     app_id: # leancloud <AppID>
     app_key: # leancloud <AppKey>
         
@@ -183,7 +183,7 @@ fb_app_id:
   
 # profile
 profile:
-  enabled: true # Whether to show profile bar
+  enabled: true  # Whether to show profile bar
   avatar: images/avatar.jpg
   gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
   author: heleidsn

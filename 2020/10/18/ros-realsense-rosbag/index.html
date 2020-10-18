@@ -17,21 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>rostopic可视化工具plotjuggler | Heleidsn</title>
-  <meta name="description" content="发现一个比较好用的rostopic的实时可视化工具，界面还可以： http:&#x2F;&#x2F;wiki.ros.org&#x2F;plotjuggler https:&#x2F;&#x2F;github.com&#x2F;facontidavide&#x2F;PlotJuggler">
+  <title>使用rosbag录制intelrealsense相机的数据 | Heleidsn</title>
+  <meta name="description" content="最近需要对px4 avoidance进行一些测试，由于wifi连接感觉不是很靠谱，因此需要在无人机上的jetson nano进行实时录制。 rosbagref：http:&#x2F;&#x2F;wiki.ros.org&#x2F;rosbag rosbag可以很好的对ros中的所有信息进行录制，常用命令有：rosbag record -a录制所有topics 然而对于realsense相机来说，其正常运行状态下以30fps的速">
 <meta property="og:type" content="article">
-<meta property="og:title" content="rostopic可视化工具plotjuggler">
-<meta property="og:url" content="http://yoursite.com/2020/09/04/ros-plotjuggler/index.html">
+<meta property="og:title" content="使用rosbag录制intelrealsense相机的数据">
+<meta property="og:url" content="http://yoursite.com/2020/10/18/ros-realsense-rosbag/index.html">
 <meta property="og:site_name" content="Heleidsn">
-<meta property="og:description" content="发现一个比较好用的rostopic的实时可视化工具，界面还可以： http:&#x2F;&#x2F;wiki.ros.org&#x2F;plotjuggler https:&#x2F;&#x2F;github.com&#x2F;facontidavide&#x2F;PlotJuggler">
+<meta property="og:description" content="最近需要对px4 avoidance进行一些测试，由于wifi连接感觉不是很靠谱，因此需要在无人机上的jetson nano进行实时录制。 rosbagref：http:&#x2F;&#x2F;wiki.ros.org&#x2F;rosbag rosbag可以很好的对ros中的所有信息进行录制，常用命令有：rosbag record -a录制所有topics 然而对于realsense相机来说，其正常运行状态下以30fps的速">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-04T08:52:01.000Z">
-<meta property="article:modified_time" content="2020-09-04T08:59:16.825Z">
+<meta property="article:published_time" content="2020-10-18T15:07:02.000Z">
+<meta property="article:modified_time" content="2020-10-18T18:38:17.607Z">
 <meta property="article:author" content="Lei He">
-<meta property="article:tag" content="ROS">
+<meta property="article:tag" content="ros, realsense">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2020/09/04/ros-plotjuggler/index.html">
+  <link rel="canonical" href="http://yoursite.com/2020/10/18/ros-realsense-rosbag/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Heleidsn" type="application/atom+xml">
   
@@ -391,14 +391,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="[post]-ros-plotjuggler" class="article article-type-[post]" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-ros-realsense-rosbag" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      rostopic可视化工具plotjuggler
+      使用rosbag录制intelrealsense相机的数据
     </h1>
   
 
@@ -406,15 +406,15 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/09/04/ros-plotjuggler/" class="article-date">
-	  <time datetime="2020-09-04T08:52:01.000Z" itemprop="datePublished">2020-09-04</time>
+	<a href="/2020/10/18/ros-realsense-rosbag/" class="article-date">
+	  <time datetime="2020-10-18T15:07:02.000Z" itemprop="datePublished">2020-10-18</time>
 	</a>
 </span>
         
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/ROS/" rel="tag">ROS</a>
+	<a class="article-tag-link-link" href="/tags/ros-realsense/" rel="tag">ros, realsense</a>
   </span>
 
 
@@ -429,18 +429,41 @@
 
 	<span class="article-read hidden-xs">
     	<i class="icon icon-eye-fill" aria-hidden="true"></i>
-    	<span id="/2020/09/04/ros-plotjuggler/" class="leancloud_visitors"  data-flag-title="rostopic可视化工具plotjuggler">0</span>
+    	<span id="/2020/10/18/ros-realsense-rosbag/" class="leancloud_visitors"  data-flag-title="使用rosbag录制intelrealsense相机的数据">0</span>
     </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/09/04/ros-plotjuggler/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/10/18/ros-realsense-rosbag/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>发现一个比较好用的rostopic的实时可视化工具，界面还可以：</p>
-<p><a target="_blank" rel="noopener" href="http://wiki.ros.org/plotjuggler">http://wiki.ros.org/plotjuggler</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/facontidavide/PlotJuggler">https://github.com/facontidavide/PlotJuggler</a></p>
+        <p>最近需要对px4 avoidance进行一些测试，由于wifi连接感觉不是很靠谱，因此需要在无人机上的jetson nano进行实时录制。</p>
+<h2 id="rosbag"><a href="#rosbag" class="headerlink" title="rosbag"></a>rosbag</h2><p>ref：<a target="_blank" rel="noopener" href="http://wiki.ros.org/rosbag">http://wiki.ros.org/rosbag</a></p>
+<p>rosbag可以很好的对ros中的所有信息进行录制，常用命令有：<br><code>rosbag record -a</code>录制所有topics</p>
+<p>然而对于realsense相机来说，其正常运行状态下以30fps的速度发布多个图像，如果对所有topic进行记录，10秒钟就可以得到1G的rosbag，要录制长时间的图像信息完全不可能，因此需要录制压缩后的图像topic。</p>
+<h2 id="compressed-image-transport"><a href="#compressed-image-transport" class="headerlink" title="compressed_image_transport"></a>compressed_image_transport</h2><p>ref: <a target="_blank" rel="noopener" href="http://wiki.ros.org/compressed_image_transport">http://wiki.ros.org/compressed_image_transport</a></p>
+<p>Compressed_image_transport provides a plugin to image_transport for transparently sending images encoded as JPEG or PNG.</p>
+<p>我们直接记录压缩后的图像将大大降低rosbag的大小。</p>
+<p>要得到压缩后的图像需要先安装<code>compressed_image_transport</code>包，然后使用<code>rosbag record /camera/color/image_raw/compressed</code>即可。</p>
+<p>此外还可以使用<code>rqt_reconfigure</code>对压缩率进行控制。</p>
+<h2 id="压缩前后对比"><a href="#压缩前后对比" class="headerlink" title="压缩前后对比"></a>压缩前后对比</h2><p><code>roslaunch realsense2_camera rs_rgbd.launch</code></p>
+<h3 id="压缩前"><a href="#压缩前" class="headerlink" title="压缩前"></a>压缩前</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">path:        2020-10-18-16-24-04.bag</span><br><span class="line">version:     2.0</span><br><span class="line">duration:    12.2s</span><br><span class="line">start:       Oct 18 2020 16:24:05.02 (1603034645.02)</span><br><span class="line">end:         Oct 18 2020 16:24:17.23 (1603034657.23)</span><br><span class="line">size:        322.7 MB</span><br><span class="line">messages:    367</span><br><span class="line">compression: none [367&#x2F;367 chunks]</span><br><span class="line">types:       sensor_msgs&#x2F;Image [060021388200f6f0f447d0fcd9c64743]</span><br><span class="line">topics:      &#x2F;camera&#x2F;color&#x2F;image_raw   367 msgs    : sensor_msgs&#x2F;Image</span><br></pre></td></tr></table></figure>
+
+<h3 id="压缩后"><a href="#压缩后" class="headerlink" title="压缩后"></a>压缩后</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">path:        2020-10-18-16-23-44.bag</span><br><span class="line">version:     2.0</span><br><span class="line">duration:    10.9s</span><br><span class="line">start:       Oct 18 2020 16:23:44.68 (1603034624.68)</span><br><span class="line">end:         Oct 18 2020 16:23:55.59 (1603034635.59)</span><br><span class="line">size:        15.9 MB</span><br><span class="line">messages:    328</span><br><span class="line">compression: none [21&#x2F;21 chunks]</span><br><span class="line">types:       sensor_msgs&#x2F;CompressedImage [8f7a12909da2c9d3332d540a0977563f]</span><br><span class="line">topics:      &#x2F;camera&#x2F;color&#x2F;image_raw&#x2F;compressed   328 msgs    : sensor_msgs&#x2F;CompressedImage</span><br></pre></td></tr></table></figure>
+
+<h2 id="深度图像压缩后无法显示问题"><a href="#深度图像压缩后无法显示问题" class="headerlink" title="深度图像压缩后无法显示问题"></a>深度图像压缩后无法显示问题</h2><p>rgb图像压缩后可以直接显示，但是深度图像压缩后无法显示。</p>
+<p><strong>compressed_depth_image_transport</strong></p>
+<p>Compressed_depth_image_transport provides a plugin to image_transport for transparently sending depth images (raw, floating-point) using PNG compression.</p>
+<p>安装上述插件之后发现相机发布的消息多了一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;base_topic&gt;&#x2F;compressedDepth (sensor_msgs&#x2F;CompressedImage)</span><br></pre></td></tr></table></figure>
+
+<p>只需要将这个消息进行记录即可记录压缩后的深度信息。</p>
+<h2 id="记录点云"><a href="#记录点云" class="headerlink" title="记录点云"></a>记录点云</h2><p>对<code>/camera/depth_registered/points</code>消息进行记录，发现大的惊人，想办法压缩之。</p>
+<p>对点云问题的讨论： <a target="_blank" rel="noopener" href="https://discourse.ros.org/t/compressed-pointcloud2/10616/4">https://discourse.ros.org/t/compressed-pointcloud2/10616/4</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">path:        points_2020-10-18-17-02-23.bag</span><br><span class="line">version:     2.0</span><br><span class="line">duration:    14.2s</span><br><span class="line">start:       Oct 18 2020 17:02:23.88 (1603036943.88)</span><br><span class="line">end:         Oct 18 2020 17:02:38.11 (1603036958.11)</span><br><span class="line">size:        3.9 GB</span><br><span class="line">messages:    428</span><br><span class="line">compression: none [428&#x2F;428 chunks]</span><br><span class="line">types:       sensor_msgs&#x2F;PointCloud2 [1158d486dd51d683ce2f1be655c3c181]</span><br><span class="line">topics:      &#x2F;camera&#x2F;depth_registered&#x2F;points   428 msgs    : sensor_msgs&#x2F;PointCloud2</span><br></pre></td></tr></table></figure>
+
+<h2 id="ref"><a href="#ref" class="headerlink" title="ref"></a>ref</h2><p><a target="_blank" rel="noopener" href="https://github.com/IntelRealSense/realsense-ros/issues/1076">https://github.com/IntelRealSense/realsense-ros/issues/1076</a></p>
 
       
     </div>
@@ -450,7 +473,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2020/09/04/ros-plotjuggler/" title="rostopic可视化工具plotjuggler" target="_blank" rel="external">http://yoursite.com/2020/09/04/ros-plotjuggler/</a>
+      <a href="http://yoursite.com/2020/10/18/ros-realsense-rosbag/" title="使用rosbag录制intelrealsense相机的数据" target="_blank" rel="external">http://yoursite.com/2020/10/18/ros-realsense-rosbag/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -496,13 +519,9 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2020/10/08/hexo-multi-device/" title="hexo多台电脑同步"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
-    
     
     <li class="next">
-      <a href="/2020/09/01/note-lastNightInMH/" title="Mitchell Hall的最后一夜"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/10/08/note-order/" title="order!!!"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
